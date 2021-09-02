@@ -1,0 +1,38 @@
+body {
+	background: #555;
+}
+
+.board {
+	width: max-content;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.board > div {
+	width: 40px;
+	height: 40px;
+}
+
+.board > .bright {
+	background: white;
+}
+.board > .dark {
+	background: black;
+}
+
+.piece, .movement-indicator {
+	text-align: center;
+	vertical-align: center;
+	font-size: 30px;
+}
+.piece.black {
+	color: red;
+}
+
+.piece.white {
+	color: blue;
+}
+
+.movement-indicator {
+	color: green;
+}
+
